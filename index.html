@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASSIE-МПР - Система прогнозирования SCP Foundation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="noise"></div>
+    <div class="scan-line"></div>
+    
+    <div class="header">
+        <div class="title">CASSIE-МПР</div>
+        <div class="subtitle">Когнитивная Адаптивная Система Сценариев Исследования и Экстраполяции</div>
+        <div class="subtitle">Модуль Прогнозирования и Распознавания</div>
+    </div>
+    
+    <div class="timestamp">
+        Время доступа: <span id="current-time">10.00.2020, 08:06:18</span>
+    </div>
+    
+    <div class="terminal" id="terminal">
+        <div class="response">
+            Инициализация CASSIE-МПР... Успешно.<br>
+            Добро пожаловать в систему прогнозирования и анализа аномалий.<br>
+            Введите "help" для получения списка команд.
+        </div>
+        
+        <div class="input-line">
+            <span class="prompt">operator@cassie-mpr</span>
+            <input type="text" id="command-input" class="command-input" autofocus>
+            <span class="cursor"></span>
+        </div>
+    </div>
+
+    <!-- Модальное окно для визуализаций -->
+    <div id="visualization-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="visualization-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
